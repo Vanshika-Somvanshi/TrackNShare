@@ -8,10 +8,10 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "dev": "cd src && clear && node app.js",
-    "start": "cd src && node app.js"
+    "dev": "node src/app.js",
+    "start": "node src/app.js"
   },
-  "author": "Wikkie",
+  "author": "Vanshika Somvanshi",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.0",
