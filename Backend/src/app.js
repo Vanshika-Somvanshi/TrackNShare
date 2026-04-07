@@ -20,7 +20,11 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: process.env.CORS || "http://localhost:4000",
+    origin: [
+      "http://localhost:4000",
+      "https://tracknshare.netlify.app",
+      ...(process.env.CORS ? [process.env.CORS] : [])
+    ],
     credentials: true,
   })
 );
